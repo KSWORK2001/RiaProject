@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dance Hub</title>
+
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+
+    <!-- Background Video Layer -->
+    <div class="video-bg">
+        <video id="video-hiphop" src="assets/videos/hiphop.mp4" muted loop playsinline></video>
+    
+        <video id="video-salsa" src="assets/videos/salsa.mp4" muted loop playsinline></video>
+    
+        <video id="video-bharatanatyam" src="assets/videos/bharatanatyam.mp4" muted loop playsinline></video>
+    
+        <video id="video-contemporary" src="assets/videos/contemporary.mp4" muted loop playsinline></video>
+    
+        <!-- Dark overlay for readability -->
+        <div class="video-overlay"></div>
+    </div>
+
+    <header class="navbar">
+        <div class="logo dance-logo">
+            <span>D</span><span>a</span><span>n</span><span>c</span><span>e</span>
+            <span class="space"></span>
+            <span>H</span><span>u</span><span>b</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Events</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <div class="hero-inner">
+            <span class="badge">Discover · Learn · Connect</span>
+            <h1 class="hero-title split-reveal">
+                <span>Dance,</span>
+                <span>Reimagined</span>
+            </h1>
+            <p>
+                Find dance styles, events, and communities curated just for you.
+            </p>
+        </div>
+    </main>
+    
+    <section class="dance-grid">
+        <div class="dance-card magnetic" data-video="hiphop" onclick="goToDance('hiphop')">
+            <span class="emoji">🔥</span>
+            <h3>Hip Hop</h3>
+            <p>Street styles & freestyle culture</p>
+        </div>
+    
+        <div class="dance-card magnetic" data-video="salsa" onclick="goToDance('salsa')">
+            <span class="emoji">💃</span>
+            <h3>Salsa</h3>
+            <p>Latin rhythm & partner flow</p>
+        </div>
+    
+        <div class="dance-card magnetic" data-video="bharatanatyam" onclick="goToDance('bharatanatyam')">
+            <span class="emoji">🕉️</span>
+            <h3>Bharatanatyam</h3>
+            <p>Classical storytelling & form</p>
+        </div>
+    
+        <div class="dance-card magnetic" data-video="contemporary" onclick="goToDance('contemporary')">
+            <span class="emoji">🌊</span>
+            <h3>Contemporary</h3>
+            <p>Expression through movement</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Dance Hub</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

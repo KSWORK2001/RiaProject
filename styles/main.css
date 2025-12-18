@@ -1,0 +1,338 @@
+:root {
+    --bg: #0a0a0a;
+    --card-bg: #111;
+    --text-primary: #ffffff;
+    --text-secondary: #b5b5b5;
+    --border: rgba(255, 255, 255, 0.08);
+    --radius: 18px;
+}
+
+/* ---------------- RESET ---------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, system-ui, sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text-primary);
+    overflow-x: hidden;
+}
+
+/* ---------------- NAVBAR ---------------- */
+.navbar {
+    padding: 28px 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.navbar nav a {
+    margin-left: 28px;
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.navbar nav a:hover {
+    color: white;
+}
+
+/* ---------------- HERO ---------------- */
+.hero {
+    text-align: center;
+    padding: 120px 20px 80px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.hero-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 18px;
+    max-width: 900px;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    font-size: 0.8rem;
+    color: #ccc;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(6px);
+}
+
+.hero-title {
+    font-size: clamp(3rem, 6vw, 4.5rem);
+    letter-spacing: -2px;
+    line-height: 1.05;
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+}
+
+/* ---------------- GRID ---------------- */
+.dance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 36px;
+    padding: 80px 60px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.dance-card {
+    position: relative;
+    background: linear-gradient(180deg, #141414, #0c0c0c);
+    border-radius: var(--radius);
+    padding: 52px 36px;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.dance-card::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(255, 255, 255, 0.12),
+            transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.dance-card:hover::before {
+    opacity: 1;
+}
+
+.dance-card:hover {
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7);
+}
+
+.emoji {
+    font-size: 2.4rem;
+}
+
+.dance-card h3 {
+    margin-top: 18px;
+    font-size: 1.4rem;
+}
+
+.dance-card p {
+    margin-top: 10px;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+/* ---------------- ANIMATIONS ---------------- */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.delay-1 {
+    animation-delay: 0.25s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.reveal-text {
+    overflow: hidden;
+}
+
+.reveal-text::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: white;
+    width: 0%;
+    animation: underline 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.split-reveal {
+    display: inline-flex;
+    gap: 12px;
+    overflow: hidden;
+}
+
+.split-reveal span {
+    display: inline-block;
+    transform: translateY(120%);
+    animation: slideUp 0.8s cubic-bezier(.22, 1, .36, 1) forwards;
+}
+
+.split-reveal span:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+@keyframes slideUp {
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+    padding: 40px;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+/* ---------------- MOBILE ---------------- */
+@media (max-width: 768px) {
+    .dance-grid {
+        padding: 60px 24px;
+    }
+}
+
+/* ---------------- DANCE LOGO ---------------- */
+.dance-logo {
+    display: flex;
+    font-weight: 700;
+    font-size: 1.4rem;
+    cursor: pointer;
+    perspective: 500px;
+}
+
+.dance-logo span {
+    display: inline-block;
+    transition: transform 0.4s cubic-bezier(.4, 0, .2, 1);
+}
+
+.dance-logo .space {
+    width: 8px;
+}
+
+.dance-logo:hover span {
+    animation: dance 0.6s ease forwards;
+}
+
+.dance-logo:hover span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.dance-logo:hover span:nth-child(2) {
+    animation-delay: 0.05s;
+}
+
+.dance-logo:hover span:nth-child(3) {
+    animation-delay: 0.1s;
+}
+
+.dance-logo:hover span:nth-child(4) {
+    animation-delay: 0.15s;
+}
+
+.dance-logo:hover span:nth-child(5) {
+    animation-delay: 0.2s;
+}
+
+.dance-logo:hover span:nth-child(7) {
+    animation-delay: 0.25s;
+}
+
+.dance-logo:hover span:nth-child(8) {
+    animation-delay: 0.3s;
+}
+
+.dance-logo:hover span:nth-child(9) {
+    animation-delay: 0.35s;
+}
+
+@keyframes dance {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    30% {
+        transform: translateY(-6px) rotate(-5deg);
+    }
+
+    60% {
+        transform: translateY(4px) rotate(4deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+.dance-logo:hover {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
+}
+
+.hero-title {
+    line-height: 1.5;
+    filter: blur(12px);
+    opacity: 0;
+    letter-spacing: 8px;
+    animation: focusIn 1s ease forwards;
+}
+
+@keyframes focusIn {
+    to {
+        filter: blur(0);
+        opacity: 1;
+        letter-spacing: -1px;
+    }
+}
+
+.hero-title {
+    transition: transform 0.2s ease;
+    transform-style: preserve-3d;
+}
+
+/* ---------------- VIDEO BACKGROUND ---------------- */
+.video-bg {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: black;
+    overflow: hidden;
+}
+
+.video-bg video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.video-bg video.active {
+    opacity: 1;
+}
+
+.video-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
