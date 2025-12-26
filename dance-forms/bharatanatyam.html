@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bharatanatyam | Dance Hub</title>
+
+    <link rel="stylesheet" href="../styles/main.css" />
+</head>
+
+<body class="bharatanatyam">
+
+    <!-- Background Video Layer -->
+    <div class="video-bg">
+        <video id="video-event" src="../assets/videos/bharatanatyam-event.mp4" muted loop playsinline></video>
+        <video id="video-learn" src="../assets/videos/bharatanatyam-learn.mp4" muted loop playsinline></video>
+        <video id="video-studio" src="../assets/videos/bharatanatyam-studio.mp4" muted loop playsinline></video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <header class="navbar">
+        <div class="logo dance-logo">Dance Hub</div>
+        <nav>
+            <a href="../index.html">Home</a>
+        </nav>
+    </header>
+
+    <main class="hero bharatanatyam-hero">
+        <div class="hero-left">
+            <span class="badge">Bharatanatyam · India</span>
+            <h1 class="hero-title stacked">
+                <span>BHARATA</span>
+                <span>NATYAM</span>
+            </h1>
+        </div>
+
+        <div class="hero-right">
+            <p>
+                From ancient temple traditions to modern stages —  
+                discover the divine art of Bharatanatyam across India.
+            </p>
+        </div>
+    </main>
+
+
+    <!-- Tabs -->
+    <section class="tabs">
+        <button class="tab active" data-tab="events">Events</button>
+        <button class="tab" data-tab="learn">Learn</button>
+        <button class="tab" data-tab="studios">Classes & Studios</button>
+    </section>
+
+    <!-- EVENTS -->
+    <section class="tab-content active" id="events">
+        <div class="dance-grid">
+            <div class="dance-card magnetic" data-video="event" 
+                 data-title="Chennai Dance Festival" 
+                 data-location="Chennai, Tamil Nadu" 
+                 data-date="December - January" 
+                 data-time="6:00 PM - 9:00 PM"
+                 data-description="Experience the pinnacle of Bharatanatyam at Chennai's prestigious dance festival. Featuring renowned dancers from across the globe."
+                 data-price="₹500 - ₹2000"
+                 data-features="World Renowned Artists • Traditional Venue • Cultural Programs • Workshops">
+                <h3>Chennai Dance Festival</h3>
+                <p>📍 Chennai • Season's finest</p>
+            </div>
+
+            <div class="dance-card magnetic" data-video="event"
+                 data-title="Temple Dance Recital"
+                 data-location="Thanjavur, Tamil Nadu"
+                 data-date="Full Moon Nights"
+                 data-time="7:00 PM - 10:00 PM"
+                 data-description="Witness authentic Bharatanatyam in the sacred ambiance of ancient temples, where this art form originated centuries ago."
+                 data-price="Free entry"
+                 data-features="Sacred Setting • Traditional Costumes • Live Music • Spiritual Experience">
+                <h3>Temple Dance Recital</h3>
+                <p>📍 Thanjavur • Divine performances</p>
+            </div>
+
+            <div class="dance-card magnetic" data-video="event"
+                 data-title="Nritya Utsav"
+                 data-location="Bangalore, Karnataka"
+                 data-date="Monthly"
+                 data-time="5:00 PM - 8:00 PM"
+                 data-description="A celebration of classical dance featuring Bharatanatyam maestros and emerging talents sharing the stage in perfect harmony."
+                 data-price="₹300 students, ₹500 general"
+                 data-features="Mixed Performances • Young Artists • Cultural Exchange • Afterparty">
+                <h3>Nritya Utsav</h3>
+                <p>📍 Bangalore • Cultural fusion</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEARN -->
+    <section class="tab-content" id="learn">
+        <div class="dance-grid">
+            <div class="dance-card magnetic" data-video="learn"
+                 data-title="Beginner Bharatanatyam"
+                 data-location="Mumbai, Maharashtra"
+                 data-date="Weekday Batches"
+                 data-time="4:00 PM - 6:00 PM"
+                 data-description="Start your journey into the world of Bharatanatyam with foundational adavus, hand gestures, and basic rhythms."
+                 data-price="₹2000 per month"
+                 data-features="Basic Adavus • Hastas • Theory • Small Class Size">
+                <h3>Beginner Bharatanatyam</h3>
+                <p>Gentle introduction to classical dance</p>
+            </div>
+
+            <div class="dance-card magnetic" data-video="learn"
+                 data-title="Advanced Technique"
+                 data-location="Delhi, NCR"
+                 data-date="Weekend Intensive"
+                 data-time="9:00 AM - 1:00 PM"
+                 data-description="Master complex choreography, abhinaya techniques, and traditional repertoire under expert guidance."
+                 data-price="₹4000 per month"
+                 data-features="Advanced Items • Abhinaya • Repertoire • Personal Attention">
+                <h3>Advanced Technique</h3>
+                <p>Master the art of expression</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- STUDIOS -->
+    <section class="tab-content" id="studios">
+        <div class="dance-grid">
+            <div class="dance-card magnetic" data-video="studio"
+                 data-title="Kalakshetra Foundation"
+                 data-location="Chennai, Tamil Nadu"
+                 data-date="Daily Classes"
+                 data-time="6:00 AM - 8:00 PM"
+                 data-description="India's premier institution for Bharatanatyam, preserving the purest form of this ancient art since 1936."
+                 data-price="₹3000 monthly, ₹25000 yearly"
+                 data-features="Guru-Shishya Parampara • Traditional Teaching • Hostel Facility • Library">
+                <h3>Kalakshetra Foundation</h3>
+                <p>📍 Chennai • Legendary institution</p>
+            </div>
+
+            <div class="dance-card magnetic" data-video="studio"
+                 data-title="Natya Shastra Academy"
+                 data-location="Pune, Maharashtra"
+                 data-date="Mon/Wed/Fri"
+                 data-time="5:30 PM - 7:30 PM"
+                 data-description="Authentic Bharatanatyam training following ancient Natya Shastra principles with modern teaching methods."
+                 data-price="₹2500 per month"
+                 data-features="Traditional Style • Certified Teachers • Performance Opportunities • Cultural Events">
+                <h3>Natya Shastra Academy</h3>
+                <p>📍 Pune • Traditional excellence</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detail Modal -->
+    <div class="detail-modal" id="detailModal">
+        <div class="modal-overlay" onclick="closeModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div class="modal-header">
+                <h2 class="modal-title"></h2>
+                <div class="modal-location"></div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-info">
+                    <div class="info-item">
+                        <span class="info-label">📅</span>
+                        <span class="modal-date"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">🕐</span>
+                        <span class="modal-time"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">💰</span>
+                        <span class="modal-price"></span>
+                    </div>
+                </div>
+                <p class="modal-description"></p>
+                <div class="modal-features"></div>
+                <button class="modal-cta">Get More Info</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Dance Hub</p>
+    </footer>
+
+    <script src="../scripts/bharatanatyam.js"></script>
+</body>
+
+</html>

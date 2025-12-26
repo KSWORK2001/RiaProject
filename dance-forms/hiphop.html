@@ -11,39 +11,181 @@
 
 <body>
 
+    <!-- Background Video Layer -->
+    <div class="video-bg">
+        <video id="video-event" src="../assets/videos/hiphop-event.mp4" muted loop playsinline></video>
+        <video id="video-learn" src="../assets/videos/hiphop-learn.mp4" muted loop playsinline></video>
+        <video id="video-studio" src="../assets/videos/hiphop-studio.mp4" muted loop playsinline></video>
+        <div class="video-overlay"></div>
+    </div>
+
     <header class="navbar">
-        <div class="logo">Dance Hub</div>
+        <div class="logo dance-logo">Dance Hub</div>
         <nav>
             <a href="../index.html">Home</a>
         </nav>
     </header>
 
-    <main class="hero">
-        <h1>Hip Hop</h1>
-        <p>High-energy street styles, battles, and freestyle culture.</p>
-    </main>
+    <main class="hero hiphop-hero">
+  <div class="hero-left">
+    <span class="badge">Hip Hop · Georgia</span>
+    <h1 class="hero-title stacked">
+      <span>HIP</span>
+      <span>HOP</span>
+    </h1>
+  </div>
 
-    <section class="dance-grid">
-        <div class="dance-card">
-            <h3>Events</h3>
-            <p>Coming soon</p>
-        </div>
+  <div class="hero-right">
+    <p>
+      From underground cyphers to packed Atlanta studios —  
+      discover where Hip Hop lives across Georgia.
+    </p>
+  </div>
+</main>
 
-        <div class="dance-card">
-            <h3>Studios</h3>
-            <p>Coming soon</p>
-        </div>
 
-        <div class="dance-card">
-            <h3>Communities</h3>
-            <p>Coming soon</p>
+    <!-- Tabs -->
+    <section class="tabs">
+        <button class="tab active" data-tab="events">Events</button>
+        <button class="tab" data-tab="learn">Learn</button>
+        <button class="tab" data-tab="studios">Classes & Studios</button>
+    </section>
+
+    <!-- EVENTS -->
+    <section class="tab-content active" id="events">
+        <div class="dance-grid">
+            <div class="dance-card magnetic" data-video="event" 
+                 data-title="ATL Hip Hop Jam" 
+                 data-location="Atlanta, GA" 
+                 data-date="This Saturday" 
+                 data-time="8:00 PM - 2:00 AM"
+                 data-description="Join the biggest hip hop dance event in Atlanta! Featuring battles, showcases, and open cyphers. All skill levels welcome."
+                 data-price="$15 at door"
+                 data-features="Live DJ • Battles • Open Cyphers • Food Trucks">
+                <h3>ATL Hip Hop Jam</h3>
+                <p>📍 Atlanta · This Saturday</p>
+            </div>
+
+            <div class="dance-card magnetic" data-video="event"
+                 data-title="Street Cypher Night"
+                 data-location="Decatur, GA"
+                 data-date="Every Friday"
+                 data-time="7:00 PM - 11:00 PM"
+                 data-description="Weekly open cypher session for dancers to practice, share, and grow. No judges, no competition - pure hip hop culture."
+                 data-price="Free entry"
+                 data-features="Open Cypher • Community Vibe • All Levels • Parking Available">
+                <h3>Street Cypher Night</h3>
+                <p>📍 Decatur · Open freestyle</p>
+            </div>
+
+            <div class="dance-card magnetic" data-video="event"
+                 data-title="College Crew Showcase"
+                 data-location="Athens, GA"
+                 data-date="Monthly"
+                 data-time="6:00 PM - 10:00 PM"
+                 data-description="University dance crews battle it out in this monthly showcase. Come support the next generation of hip hop talent."
+                 data-price="$10 students, $15 general"
+                 data-features="Crew Battles • Solo Battles • Special Performances • Afterparty">
+                <h3>College Crew Showcase</h3>
+                <p>📍 Athens · Battles & showcases</p>
+            </div>
         </div>
     </section>
 
+    <!-- LEARN -->
+    <section class="tab-content" id="learn">
+        <div class="dance-grid">
+            <div class="dance-card magnetic" data-video="learn"
+                 data-title="Beginner Hip Hop Workshop"
+                 data-location="Atlanta, GA"
+                 data-date="Saturdays"
+                 data-time="10:00 AM - 12:00 PM"
+                 data-description="Perfect for absolute beginners! Learn fundamental hip hop moves, rhythm, and confidence in a supportive environment."
+                 data-price="$25 per session"
+                 data-features="Basic Moves • Rhythm Training • Choreography • Small Class Size">
+                <h3>Beginner Hip Hop Workshop</h3>
+                <p>Grooves, foundations, rhythm</p>
+            </div>
+
+            <div class="dance-card magnetic" data-video="learn"
+                 data-title="Freestyle Lab"
+                 data-location="Decatur, GA"
+                 data-date="Wednesdays"
+                 data-time="7:30 PM - 9:30 PM"
+                 data-description="Develop your freestyle skills with guided exercises and practice time. Learn to improvise and find your unique style."
+                 data-price="$30 per session"
+                 data-features="Musicality • Improvisation • Battle Tactics • Personal Feedback">
+                <h3>Freestyle Lab</h3>
+                <p>Musicality & improvisation</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- STUDIOS -->
+    <section class="tab-content" id="studios">
+        <div class="dance-grid">
+            <div class="dance-card magnetic" data-video="studio"
+                 data-title="Motion ATL"
+                 data-location="Midtown Atlanta"
+                 data-date="Daily Classes"
+                 data-time="6:00 AM - 10:00 PM"
+                 data-description="Premier hip hop dance studio in the heart of Atlanta. Professional instructors, state-of-the-art facilities, and welcoming community."
+                 data-price="$20 drop-in, $150/month unlimited"
+                 data-features="Pro Instructors • Spring Floors • Locker Rooms • Parking">
+                <h3>Motion ATL</h3>
+                <p>📍 Midtown · Open classes</p>
+            </div>
+
+            <div class="dance-card magnetic" data-video="studio"
+                 data-title="Underground Movement"
+                 data-location="Buckhead, GA"
+                 data-date="Mon/Wed/Fri"
+                 data-time="7:00 PM - 9:00 PM"
+                 data-description="Advanced training for serious dancers. Push your limits with challenging choreography and technique refinement."
+                 data-price="$35 drop-in, $200/month unlimited"
+                 data-features="Advanced Level • Small Classes • Personal Attention • Performance Team">
+                <h3>Underground Movement</h3>
+                <p>📍 Buckhead · Advanced training</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detail Modal -->
+    <div class="detail-modal" id="detailModal">
+        <div class="modal-overlay" onclick="closeModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div class="modal-header">
+                <h2 class="modal-title"></h2>
+                <div class="modal-location"></div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-info">
+                    <div class="info-item">
+                        <span class="info-label">📅</span>
+                        <span class="modal-date"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">🕐</span>
+                        <span class="modal-time"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">💰</span>
+                        <span class="modal-price"></span>
+                    </div>
+                </div>
+                <p class="modal-description"></p>
+                <div class="modal-features"></div>
+                <button class="modal-cta">Get More Info</button>
+            </div>
+        </div>
+    </div>
+
     <footer>
-        <p>© 2025 Dance Hub</p>
+        <p> 2025 Dance Hub</p>
     </footer>
 
+    <script src="../scripts/hiphop.js"></script>
 </body>
 
 </html>
