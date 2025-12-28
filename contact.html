@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | DANCETOPIA</title>
+
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+</head>
+
+<body class="static-page contact">
+
+    <div class="video-bg">
+        <video id="video-contact" src="assets/videos/hiphop.mp4" muted loop autoplay playsinline class="active"></video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <header class="navbar">
+        <a class="logo dance-logo" href="index.html">
+            <span>D</span><span>A</span><span>N</span><span>C</span><span>E</span><span>T</span><span>O</span><span>P</span><span>I</span><span>A</span>
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Events</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="page">
+        <section class="page-hero">
+            <span class="badge">Say hello · Let’s build this</span>
+            <h1 class="hero-title">Contact DANCETOPIA</h1>
+            <p class="page-subtitle">
+                Want to suggest features, report a bug, partner on an event, or bring your studio onto the platform? Send a message.
+            </p>
+        </section>
+
+        <section class="page-grid one">
+            <form class="form" id="contactForm" novalidate>
+                <div class="form-row">
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" autocomplete="name" required />
+                        <div class="error" data-for="name"></div>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required />
+                        <div class="error" data-for="email"></div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="topic">Topic</label>
+                    <select id="topic" name="topic" required>
+                        <option value="" selected disabled>Select a topic</option>
+                        <option value="feature">Feature request</option>
+                        <option value="bug">Bug report</option>
+                        <option value="studio">Studio / Instructor</option>
+                        <option value="event">Event / Festival</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <div class="error" data-for="topic"></div>
+                </div>
+
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                    <div class="error" data-for="message"></div>
+                </div>
+
+                <div class="form-actions">
+                    <button class="btn" type="submit">Send message</button>
+                    <div class="form-status" id="formStatus" aria-live="polite"></div>
+                </div>
+
+                <div class="form-hint">
+                    This demo doesn’t send email yet. Your message will be validated and shown as “ready to send.”
+                </div>
+            </form>
+        </section>
+
+        <footer>
+            <p>© 2025 Dance Hub</p>
+        </footer>
+    </main>
+
+    <script src="scripts/contact.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+.static-page .page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 90px 24px 60px;
+}
+
+.static-page .page-hero {
+    text-align: left;
+    max-width: 880px;
+    margin: 0 auto 40px;
+}
+
+.static-page .page-subtitle {
+    margin-top: 14px;
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.static-page .page-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.static-page .page-card {
+    background: linear-gradient(180deg, rgba(20, 20, 20, 0.9), rgba(10, 10, 10, 0.85));
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 22px 20px;
+    backdrop-filter: blur(10px);
+}
+
+.static-page .page-card h2 {
+    font-size: 1.1rem;
+    letter-spacing: -0.3px;
+}
+
+.static-page .page-card p {
+    margin-top: 10px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.static-page .page-list {
+    margin-top: 14px;
+    padding-left: 18px;
+    color: var(--text-secondary);
+    display: grid;
+    gap: 6px;
+}
+
+.static-page .page-cta {
+    margin: 26px auto 0;
+    max-width: 1100px;
+}
+
+.static-page .cta-inner {
+    border-radius: var(--radius);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 26px 22px;
+    background:
+        radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.09) 0%, transparent 55%),
+        linear-gradient(180deg, rgba(20, 20, 20, 0.92), rgba(10, 10, 10, 0.86));
+}
+
+.static-page .cta-inner p {
+    margin-top: 10px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.static-page .cta-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.static-page .cta-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 14px;
+    border-radius: 999px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.static-page .cta-link.secondary {
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.static-page .cta-link:hover {
+    border-color: rgba(255, 255, 255, 0.28);
+    background: rgba(255, 255, 255, 0.09);
+}
+
+.static-page .page-roadmap {
+    margin: 18px auto 0;
+    max-width: 1100px;
+}
+
+.static-page .roadmap-inner {
+    border-radius: var(--radius);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 26px 22px;
+    background:
+        radial-gradient(circle at 75% 20%, rgba(255, 255, 255, 0.08) 0%, transparent 55%),
+        linear-gradient(180deg, rgba(20, 20, 20, 0.9), rgba(10, 10, 10, 0.86));
+}
+
+.static-page .roadmap-inner h2 {
+    margin-top: 10px;
+    letter-spacing: -0.4px;
+}
+
+.static-page .roadmap-subtitle {
+    margin-top: 10px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.static-page .roadmap-grid {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+}
+
+.static-page .roadmap-item {
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(0, 0, 0, 0.28);
+    padding: 16px 14px;
+}
+
+.static-page .roadmap-kicker {
+    font-size: 0.78rem;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.static-page .roadmap-title {
+    margin-top: 8px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+}
+
+.static-page .roadmap-text {
+    margin-top: 8px;
+    color: var(--text-secondary);
+    line-height: 1.55;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .static-page .page {
+        padding-top: 70px;
+    }
+}
