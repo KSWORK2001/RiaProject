@@ -1,0 +1,59 @@
+/* Classical Dance theme */
+
+body.classical {
+    --classical-gold: rgba(255, 215, 0, 0.9);
+    --classical-bronze: rgba(205, 127, 50, 0.9);
+}
+
+.classical .video-overlay {
+    background:
+        linear-gradient(180deg,
+            rgba(10, 10, 10, 0.62) 0%,
+            rgba(10, 10, 10, 0.75) 45%,
+            rgba(10, 10, 10, 0.9) 100%),
+        radial-gradient(circle at 30% 25%, rgba(255, 215, 0, 0.14) 0%, transparent 55%),
+        radial-gradient(circle at 70% 60%, rgba(205, 127, 50, 0.12) 0%, transparent 60%);
+}
+
+.classical::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(ellipse at top, rgba(255, 215, 0, 0.08) 0%, transparent 60%),
+        radial-gradient(ellipse at bottom, rgba(205, 127, 50, 0.08) 0%, transparent 65%);
+    pointer-events: none;
+    z-index: -2;
+}
+
+.classical .dance-card {
+    background:
+        linear-gradient(135deg, #8B4513 0%, #654321 50%, #704214 100%),
+        radial-gradient(ellipse at top, rgba(255, 215, 0, 0.05) 0%, transparent 60%);
+    border: 1px solid rgba(255, 215, 0, 0.1);
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.65),
+        0 0 40px rgba(255, 215, 0, 0.15);
+}
+
+.classical .expanded-card {
+    background: linear-gradient(135deg, #654321 0%, #4A2C17 50%, #5C3317 100%);
+    border: 1px solid rgba(255, 215, 0, 0.1);
+}
+
+.classical .expanded-card-title {
+    animation: classicalGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes classicalGlow {
+    from {
+        text-shadow:
+            0 0 8px rgba(255, 215, 0, 0.35),
+            0 0 18px rgba(255, 140, 0, 0.22);
+    }
+    to {
+        text-shadow:
+            0 0 16px rgba(255, 215, 0, 0.6),
+            0 0 30px rgba(255, 140, 0, 0.35);
+    }
+}

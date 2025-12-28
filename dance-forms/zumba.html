@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zumba | DANCETOPIA</title>
+
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/zumba.css" />
+</head>
+
+<body class="zumba">
+
+    <!-- Background Video Layer -->
+    <div class="video-bg">
+        <video id="video-event" src="../assets/videos/zumba-event.mp4" muted loop playsinline></video>
+        <video id="video-learn" src="../assets/videos/zumba-learn.mp4" muted loop playsinline></video>
+        <video id="video-studio" src="../assets/videos/zumba-studio.mp4" muted loop playsinline></video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <header class="navbar">
+        <a class="logo dance-logo" href="../index.html">
+            <span>D</span><span>A</span><span>N</span><span>C</span><span>E</span><span>T</span><span>O</span><span>P</span><span>I</span><span>A</span>
+        </a>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="#">Events</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <div class="hero-left">
+            <span class="badge">Zumba · Fitness</span>
+            <h1 class="hero-title stacked">
+                <span>ZUM</span>
+                <span>BA</span>
+            </h1>
+        </div>
+
+        <div class="hero-right">
+            <p>
+                Sweat, smile, repeat — discover Zumba classes, events, and studios that turn workouts into dance parties.
+            </p>
+        </div>
+    </main>
+
+
+    <!-- Tabs -->
+    <section class="tabs">
+        <button class="tab active" data-tab="events">Events</button>
+        <button class="tab" data-tab="learn">Learn</button>
+        <button class="tab" data-tab="studios">Classes & Studios</button>
+    </section>
+
+    <!-- EVENTS -->
+    <section class="tab-content active" id="events">
+        <div class="dance-grid">
+            <div class="dance-card magnetic" data-video="event" 
+                 data-title="Zumba Glow Party" 
+                 data-location="Miami, FL" 
+                 data-date="Saturday" 
+                 data-time="7:00 PM - 9:00 PM"
+                 data-description="A neon-lit Zumba party with high-energy playlists, glow gear, and a full-body cardio blast."
+                 data-price="$20"
+                 data-features="Glow Gear • High Energy • All Levels • Party Atmosphere">
+               <h3>Zumba Glow Party</h3>
+               <p>📍 Miami • Neon vibes</p>
+            </div>
+
+            <div class="dance-card magnetic" data-video="event"
+                 data-title="Outdoor Zumba Fest"
+                 data-location="Austin, TX"
+                 data-date="Monthly"
+                 data-time="9:00 AM - 11:00 AM"
+                 data-description="Start the day with an outdoor Zumba session featuring rotating instructors and upbeat mixes."
+                 data-price="Free"
+                 data-features="Outdoor • Community • Rotating Instructors • Water Stations">
+               <h3>Outdoor Zumba Fest</h3>
+               <p>📍 Austin • Morning boost</p>
+            </div>
+
+            <div class="dance-card magnetic" data-video="event"
+                 data-title="Charity Dance Cardio"
+                 data-location="Atlanta, GA"
+                 data-date="Seasonal"
+                 data-time="6:30 PM - 8:00 PM"
+                 data-description="A dance-fitness event raising funds for local causes. Bring friends and move together for impact."
+                 data-price="$15 donation"
+                 data-features="Charity • Community • All Levels • Group Energy">
+               <h3>Charity Dance Cardio</h3>
+               <p>📍 Atlanta • Dance for good</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEARN -->
+    <section class="tab-content" id="learn">
+        <div class="dance-grid">
+            <div class="dance-card magnetic" data-video="learn"
+                 data-title="Zumba Foundations"
+                 data-location="Orlando, FL"
+                 data-date="Weeknights"
+                 data-time="6:00 PM - 7:00 PM"
+                 data-description="Get comfortable with basic rhythms, steps, and pacing. Perfect if you're new to dance fitness."
+                 data-price="$120 per month"
+                 data-features="Beginner Friendly • Rhythms • Pacing • Low Pressure">
+               <h3>Zumba Foundations</h3>
+               <p>Easy rhythms, big fun</p>
+            </div>
+
+            <div class="dance-card magnetic" data-video="learn"
+                 data-title="HIIT Zumba Mix"
+                 data-location="Denver, CO"
+                 data-date="Weekends"
+                 data-time="10:30 AM - 12:00 PM"
+                 data-description="A faster-paced Zumba session with bursts of intensity for a stronger cardio challenge."
+                 data-price="$18 drop-in"
+                 data-features="HIIT Bursts • Cardio • Sweat Session • High Energy">
+               <h3>HIIT Zumba Mix</h3>
+               <p>Cardio challenge</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- STUDIOS -->
+    <section class="tab-content" id="studios">
+        <div class="dance-grid">
+            <div class="dance-card magnetic" data-video="studio"
+                 data-title="DanceFit Studio"
+                 data-location="Phoenix, AZ"
+                 data-date="Daily Classes"
+                 data-time="6:00 AM - 8:00 PM"
+                 data-description="A dance-fitness focused studio offering Zumba, cardio dance, and strength add-ons with great playlists."
+                 data-price="$25 drop-in"
+                 data-features="Dance Fitness • Great Playlists • All Levels • Friendly Coaches">
+               <h3>DanceFit Studio</h3>
+               <p>📍 Phoenix • Cardio party</p>
+            </div>
+
+            <div class="dance-card magnetic" data-video="studio"
+                 data-title="Pulse Movement"
+                 data-location="San Diego, CA"
+                 data-date="Mon/Wed/Fri"
+                 data-time="6:30 PM - 9:00 PM"
+                 data-description="Zumba classes with a community vibe, themed sessions, and rotating instructors."
+                 data-price="$140 monthly"
+                 data-features="Community Vibe • Themes • Rotating Instructors • Evening Classes">
+               <h3>Pulse Movement</h3>
+               <p>📍 San Diego • Community energy</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Dance Hub</p>
+    </footer>
+
+    <script defer src="../scripts/music-tracks.js"></script>
+    <script defer src="../scripts/music-player.js"></script>
+    <script src="../scripts/zumba.js"></script>
+</body>
+
+</html>

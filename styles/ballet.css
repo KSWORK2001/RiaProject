@@ -1,0 +1,39 @@
+/* Ballet theme */
+
+body.ballet {
+    --ballet-rose: rgba(255, 192, 203, 0.9);
+    --ballet-lilac: rgba(221, 160, 221, 0.9);
+}
+
+.ballet .video-overlay {
+    background:
+        linear-gradient(180deg,
+            rgba(10, 10, 10, 0.6) 0%,
+            rgba(10, 10, 10, 0.78) 55%,
+            rgba(10, 10, 10, 0.92) 100%),
+        radial-gradient(circle at 25% 25%, rgba(255, 192, 203, 0.14) 0%, transparent 55%),
+        radial-gradient(circle at 70% 55%, rgba(221, 160, 221, 0.12) 0%, transparent 60%);
+}
+
+.ballet::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(ellipse at top, rgba(255, 192, 203, 0.08) 0%, transparent 65%),
+        radial-gradient(ellipse at bottom, rgba(221, 160, 221, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: -2;
+}
+
+.ballet .dance-card {
+    background:
+        linear-gradient(135deg, #2a2a3a 0%, #181824 55%, #0f0f18 100%),
+        radial-gradient(ellipse at top, rgba(255, 192, 203, 0.06) 0%, transparent 60%);
+    border: 1px solid rgba(255, 192, 203, 0.12);
+}
+
+.ballet .expanded-card {
+    background: linear-gradient(135deg, #232336 0%, #14141f 65%, #0f0f18 100%);
+    border: 1px solid rgba(221, 160, 221, 0.12);
+}

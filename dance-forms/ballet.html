@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ballet | DANCETOPIA</title>
+
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/ballet.css" />
+</head>
+
+<body class="ballet">
+
+    <!-- Background Video Layer -->
+    <div class="video-bg">
+        <video id="video-event" src="../assets/videos/ballet-event.mp4" muted loop playsinline></video>
+        <video id="video-learn" src="../assets/videos/ballet-learn.mp4" muted loop playsinline></video>
+        <video id="video-studio" src="../assets/videos/ballet-studio.mp4" muted loop playsinline></video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <header class="navbar">
+        <a class="logo dance-logo" href="../index.html">
+            <span>D</span><span>A</span><span>N</span><span>C</span><span>E</span><span>T</span><span>O</span><span>P</span><span>I</span><span>A</span>
+        </a>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="#">Events</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <div class="hero-left">
+            <span class="badge">Ballet · Global</span>
+            <h1 class="hero-title stacked">
+                <span>BAL</span>
+                <span>LET</span>
+            </h1>
+        </div>
+
+        <div class="hero-right">
+            <p>
+                Precision, posture, and artistry — explore ballet performances, training, and studios around the world.
+            </p>
+        </div>
+    </main>
+
+
+    <!-- Tabs -->
+    <section class="tabs">
+        <button class="tab active" data-tab="events">Events</button>
+        <button class="tab" data-tab="learn">Learn</button>
+        <button class="tab" data-tab="studios">Classes & Studios</button>
+    </section>
+
+    <!-- EVENTS -->
+    <section class="tab-content active" id="events">
+        <div class="dance-grid">
+            <div class="dance-card magnetic" data-video="event" 
+                 data-title="Swan Lake Night" 
+                 data-location="New York City, NY" 
+                 data-date="Winter Season" 
+                 data-time="7:30 PM - 10:00 PM"
+                 data-description="A classic evening of ballet featuring timeless choreography and orchestral music."
+                 data-price="$50 - $180"
+                 data-features="Live Orchestra • Historic Theatre • Dress Code • Intermission Bar">
+               <h3>Swan Lake Night</h3>
+               <p>📍 NYC • Timeless classic</p>
+            </div>
+
+            <div class="dance-card magnetic" data-video="event"
+                 data-title="Modern Ballet Gala"
+                 data-location="London, UK"
+                 data-date="Spring"
+                 data-time="8:00 PM - 10:30 PM"
+                 data-description="A gala celebrating contemporary ballet works by emerging choreographers and principal dancers."
+                 data-price="£40 - £120"
+                 data-features="New Works • Principal Dancers • Program Notes • Post-show Talk">
+               <h3>Modern Ballet Gala</h3>
+               <p>📍 London • Contemporary stage</p>
+            </div>
+
+            <div class="dance-card magnetic" data-video="event"
+                 data-title="City Ballet Open Rehearsal"
+                 data-location="San Francisco, CA"
+                 data-date="Monthly"
+                 data-time="6:00 PM - 8:00 PM"
+                 data-description="Watch dancers rehearse and learn how productions come together from studio to stage."
+                 data-price="$20"
+                 data-features="Behind the Scenes • Q&A • Studio Viewing • Limited Seating">
+               <h3>City Ballet Open Rehearsal</h3>
+               <p>📍 SF • Behind the scenes</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEARN -->
+    <section class="tab-content" id="learn">
+        <div class="dance-grid">
+            <div class="dance-card magnetic" data-video="learn"
+                 data-title="Beginner Ballet Foundations"
+                 data-location="Chicago, IL"
+                 data-date="Weeknights"
+                 data-time="6:30 PM - 7:45 PM"
+                 data-description="Build strong foundations with barre work, posture, and musicality — designed for adult beginners."
+                 data-price="$140 per month"
+                 data-features="Barre Work • Posture • Musicality • Beginner Friendly">
+               <h3>Beginner Ballet Foundations</h3>
+               <p>Barre basics and alignment</p>
+            </div>
+
+            <div class="dance-card magnetic" data-video="learn"
+                 data-title="Pointe Prep & Technique"
+                 data-location="Los Angeles, CA"
+                 data-date="Weekends"
+                 data-time="10:00 AM - 12:00 PM"
+                 data-description="Strengthen technique with focused drills and coaching designed for transitioning to pointe work."
+                 data-price="$35 drop-in"
+                 data-features="Technique • Strength • Coaching • Small Class Size">
+               <h3>Pointe Prep & Technique</h3>
+               <p>Technique & strength</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- STUDIOS -->
+    <section class="tab-content" id="studios">
+        <div class="dance-grid">
+            <div class="dance-card magnetic" data-video="studio"
+                 data-title="Academy of Ballet Arts"
+                 data-location="Boston, MA"
+                 data-date="Daily Classes"
+                 data-time="9:00 AM - 9:00 PM"
+                 data-description="Classical ballet studio with structured levels, performance opportunities, and experienced faculty."
+                 data-price="$180 monthly"
+                 data-features="Structured Levels • Performances • Experienced Faculty • Technique Focus">
+               <h3>Academy of Ballet Arts</h3>
+               <p>📍 Boston • Classical training</p>
+            </div>
+
+            <div class="dance-card magnetic" data-video="studio"
+                 data-title="Centre Stage Ballet"
+                 data-location="Seattle, WA"
+                 data-date="Mon/Wed/Fri"
+                 data-time="6:00 PM - 8:30 PM"
+                 data-description="A welcoming studio offering beginner-to-advanced classes with a strong emphasis on artistry."
+                 data-price="$25 drop-in"
+                 data-features="All Levels • Artistry • Technique • Community">
+               <h3>Centre Stage Ballet</h3>
+               <p>📍 Seattle • Technique & artistry</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Dance Hub</p>
+    </footer>
+
+    <script defer src="../scripts/music-tracks.js"></script>
+    <script defer src="../scripts/music-player.js"></script>
+    <script src="../scripts/ballet.js"></script>
+</body>
+
+</html>

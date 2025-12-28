@@ -17,9 +17,15 @@
     
         <video id="video-salsa" src="assets/videos/salsa.mp4" muted loop playsinline></video>
     
-        <video id="video-bharatanatyam" src="assets/videos/bharatanatyam.mp4" muted loop playsinline></video>
+        <video id="video-classical" src="assets/videos/bharatanatyam.mp4" muted loop playsinline></video>
     
         <video id="video-contemporary" src="assets/videos/contemporary.mp4" muted loop playsinline></video>
+
+        <video id="video-bollywood" src="assets/videos/bollywood.mp4" muted loop playsinline></video>
+
+        <video id="video-ballet" src="assets/videos/ballet.mp4" muted loop playsinline></video>
+
+        <video id="video-zumba" src="assets/videos/zumba.mp4" muted loop playsinline></video>
     
         <!-- Dark overlay for readability -->
         <div class="video-overlay"></div>
@@ -64,9 +70,9 @@
             <p>Latin rhythm & partner flow</p>
         </div>
     
-        <div class="dance-card magnetic" data-video="bharatanatyam" onclick="goToDance('bharatanatyam')">
+        <div class="dance-card magnetic" data-video="classical" onclick="goToDance('classical')">
             <span class="emoji">🕉️</span>
-            <h3>Bharatanatyam</h3>
+            <h3>Classical dance</h3>
             <p>Classical storytelling & form</p>
         </div>
     
@@ -74,6 +80,24 @@
             <span class="emoji">🌊</span>
             <h3>Contemporary</h3>
             <p>Expression through movement</p>
+        </div>
+
+        <div class="dance-card magnetic" data-video="bollywood" onclick="goToDance('bollywood')">
+            <span class="emoji">🎬</span>
+            <h3>Bollywood</h3>
+            <p>Film choreography & high energy</p>
+        </div>
+
+        <div class="dance-card magnetic" data-video="ballet" onclick="goToDance('ballet')">
+            <span class="emoji">🩰</span>
+            <h3>Ballet</h3>
+            <p>Technique, grace & stage craft</p>
+        </div>
+
+        <div class="dance-card magnetic" data-video="zumba" onclick="goToDance('zumba')">
+            <span class="emoji">⚡</span>
+            <h3>Zumba</h3>
+            <p>Dance fitness & cardio fun</p>
         </div>
     </section>
 

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bollywood | DANCETOPIA</title>
+
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/bollywood.css" />
+</head>
+
+<body class="bollywood">
+
+    <!-- Background Video Layer -->
+    <div class="video-bg">
+        <video id="video-event" src="../assets/videos/bollywood-event.mp4" muted loop playsinline></video>
+        <video id="video-learn" src="../assets/videos/bollywood-learn.mp4" muted loop playsinline></video>
+        <video id="video-studio" src="../assets/videos/bollywood-studio.mp4" muted loop playsinline></video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <header class="navbar">
+        <a class="logo dance-logo" href="../index.html">
+            <span>D</span><span>A</span><span>N</span><span>C</span><span>E</span><span>T</span><span>O</span><span>P</span><span>I</span><span>A</span>
+        </a>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="#">Events</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <div class="hero-left">
+            <span class="badge">Bollywood · India</span>
+            <h1 class="hero-title stacked">
+                <span>BOLLY</span>
+                <span>WOOD</span>
+            </h1>
+        </div>
+
+        <div class="hero-right">
+            <p>
+                Big expressions, iconic moves, and pure celebration — explore Bollywood dance from film sets to stage shows.
+            </p>
+        </div>
+    </main>
+
+
+    <!-- Tabs -->
+    <section class="tabs">
+        <button class="tab active" data-tab="events">Events</button>
+        <button class="tab" data-tab="learn">Learn</button>
+        <button class="tab" data-tab="studios">Classes & Studios</button>
+    </section>
+
+    <!-- EVENTS -->
+    <section class="tab-content active" id="events">
+        <div class="dance-grid">
+            <div class="dance-card magnetic" data-video="event" 
+                 data-title="Bollywood Night Live" 
+                 data-location="Mumbai, Maharashtra" 
+                 data-date="Fridays" 
+                 data-time="8:00 PM - 11:00 PM"
+                 data-description="A high-energy Bollywood dance night with performances, audience dance-alongs, and live DJ sets."
+                 data-price="₹500"
+                 data-features="Live DJ • Dance-Along • Stage Show • Photo Booth">
+               <h3>Bollywood Night Live</h3>
+               <p>📍 Mumbai • Lights & music</p>
+            </div>
+
+            <div class="dance-card magnetic" data-video="event"
+                 data-title="Desi Dance Fest"
+                 data-location="Delhi, NCR"
+                 data-date="Monthly"
+                 data-time="6:00 PM - 10:00 PM"
+                 data-description="A community dance festival celebrating Bollywood choreography, Bhangra fusion, and pop dance numbers."
+                 data-price="₹300 - ₹900"
+                 data-features="Group Performances • Fusion Sets • Workshops • Food Stalls">
+               <h3>Desi Dance Fest</h3>
+               <p>📍 Delhi • Festival vibes</p>
+            </div>
+
+            <div class="dance-card magnetic" data-video="event"
+                 data-title="Cinema Choreo Showcase"
+                 data-location="Bangalore, Karnataka"
+                 data-date="Seasonal"
+                 data-time="7:00 PM - 9:30 PM"
+                 data-description="A showcase of cinematic choreography featuring local crews and guest choreographers."
+                 data-price="₹400"
+                 data-features="Crew Showcase • Guest Choreo • Meet & Greet • Afterparty">
+               <h3>Cinema Choreo Showcase</h3>
+               <p>📍 Bangalore • Crew spotlight</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEARN -->
+    <section class="tab-content" id="learn">
+        <div class="dance-grid">
+            <div class="dance-card magnetic" data-video="learn"
+                 data-title="Bollywood Basics"
+                 data-location="Pune, Maharashtra"
+                 data-date="Weekday Batches"
+                 data-time="6:00 PM - 7:00 PM"
+                 data-description="Learn signature Bollywood grooves, expressions, and simple combos — perfect for beginners."
+                 data-price="₹1800 per month"
+                 data-features="Beginner Friendly • Expressions • Grooves • Short Combos">
+               <h3>Bollywood Basics</h3>
+               <p>Grooves, expressions, confidence</p>
+            </div>
+
+            <div class="dance-card magnetic" data-video="learn"
+                 data-title="Choreo Intensive"
+                 data-location="Hyderabad, Telangana"
+                 data-date="Weekends"
+                 data-time="11:00 AM - 1:00 PM"
+                 data-description="Build stamina and performance quality through choreography drills and stage-ready routines."
+                 data-price="₹2500 per month"
+                 data-features="Performance Quality • Drills • Stamina • Styling">
+               <h3>Choreo Intensive</h3>
+               <p>Level up your performance</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- STUDIOS -->
+    <section class="tab-content" id="studios">
+        <div class="dance-grid">
+            <div class="dance-card magnetic" data-video="studio"
+                 data-title="Filmi Dance Academy"
+                 data-location="Mumbai, Maharashtra"
+                 data-date="Daily Classes"
+                 data-time="10:00 AM - 9:00 PM"
+                 data-description="A vibrant studio focused on Bollywood, fusion, and film choreography with weekly showcases."
+                 data-price="₹3500 monthly"
+                 data-features="Film Choreo • Weekly Showcases • All Levels • Friendly Community">
+               <h3>Filmi Dance Academy</h3>
+               <p>📍 Mumbai • Studio to stage</p>
+            </div>
+
+            <div class="dance-card magnetic" data-video="studio"
+                 data-title="Desi Beats Studio"
+                 data-location="Delhi, NCR"
+                 data-date="Mon/Wed/Fri"
+                 data-time="6:30 PM - 9:00 PM"
+                 data-description="Bollywood and fusion training with a focus on technique, musicality, and group choreography."
+                 data-price="₹2800 monthly"
+                 data-features="Technique • Musicality • Group Choreo • Showcase Nights">
+               <h3>Desi Beats Studio</h3>
+               <p>📍 Delhi • High energy</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Dance Hub</p>
+    </footer>
+
+    <script defer src="../scripts/music-tracks.js"></script>
+    <script defer src="../scripts/music-player.js"></script>
+    <script src="../scripts/bollywood.js"></script>
+</body>
+
+</html>

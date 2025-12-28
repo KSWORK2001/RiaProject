@@ -1,0 +1,39 @@
+/* Bollywood theme */
+
+body.bollywood {
+    --bolly-pink: rgba(255, 105, 180, 0.9);
+    --bolly-gold: rgba(255, 215, 0, 0.9);
+}
+
+.bollywood .video-overlay {
+    background:
+        linear-gradient(180deg,
+            rgba(10, 10, 10, 0.62) 0%,
+            rgba(10, 10, 10, 0.78) 55%,
+            rgba(10, 10, 10, 0.92) 100%),
+        radial-gradient(circle at 20% 25%, rgba(255, 105, 180, 0.16) 0%, transparent 55%),
+        radial-gradient(circle at 75% 60%, rgba(255, 215, 0, 0.12) 0%, transparent 60%);
+}
+
+.bollywood::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(ellipse at top, rgba(255, 105, 180, 0.08) 0%, transparent 65%),
+        radial-gradient(ellipse at bottom, rgba(255, 215, 0, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: -2;
+}
+
+.bollywood .dance-card {
+    background:
+        linear-gradient(135deg, #7a153a 0%, #3b0d2a 55%, #2b0a21 100%),
+        radial-gradient(ellipse at top, rgba(255, 215, 0, 0.06) 0%, transparent 60%);
+    border: 1px solid rgba(255, 105, 180, 0.12);
+}
+
+.bollywood .expanded-card {
+    background: linear-gradient(135deg, #5a1031 0%, #2b0a21 60%, #22061a 100%);
+    border: 1px solid rgba(255, 215, 0, 0.12);
+}
