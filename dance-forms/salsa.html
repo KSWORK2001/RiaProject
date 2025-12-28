@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salsa | DANCETOPIA</title>
+
+    <link rel="stylesheet" href="../styles/main.css" />
+</head>
+
+<body class="salsa">
+
+    <!-- Background Video Layer -->
+    <div class="video-bg">
+        <video id="video-event" src="../assets/videos/salsa-event.mp4" muted loop playsinline></video>
+        <video id="video-learn" src="../assets/videos/salsa-learn.mp4" muted loop playsinline></video>
+        <video id="video-studio" src="../assets/videos/salsa-studio.mp4" muted loop playsinline></video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <header class="navbar">
+        <a class="logo dance-logo" href="../index.html">
+            <span>D</span><span>A</span><span>N</span><span>C</span><span>E</span><span>T</span><span>O</span><span>P</span><span>I</span><span>A</span>
+        </a>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="#">Events</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main class="hero salsa-hero">
+        <div class="hero-left">
+            <span class="badge">Salsa · Latin America</span>
+            <h1 class="hero-title stacked">
+                <span>SAL</span>
+                <span>SA</span>
+            </h1>
+        </div>
+
+        <div class="hero-right">
+            <p>
+                From Havana nightclubs to worldwide dance floors —  
+                feel the rhythm that moves millions across the globe.
+            </p>
+        </div>
+    </main>
+
+
+    <!-- Tabs -->
+    <section class="tabs">
+        <button class="tab active" data-tab="events">Events</button>
+        <button class="tab" data-tab="learn">Learn</button>
+        <button class="tab" data-tab="studios">Classes & Studios</button>
+    </section>
+
+    <!-- EVENTS -->
+    <section class="tab-content active" id="events">
+        <div class="dance-grid">
+            <div class="dance-card magnetic" data-video="event" 
+                 data-title="Miami Salsa Congress" 
+                 data-location="Miami, Florida" 
+                 data-date="July 15-17" 
+                 data-time="8:00 PM - 4:00 AM"
+                 data-description="The ultimate salsa experience with world-class performers, workshops, and parties. Three days of non-stop dancing!"
+                 data-price="$150-$300"
+                 data-features="International Artists • Live Bands • Workshops • Pool Parties">
+                <h3>Miami Salsa Congress</h3>
+                <p>📍 Miami • Summer heat</p>
+            </div>
+
+            <div class="dance-card magnetic" data-video="event"
+                 data-title="Havana Nights"
+                 data-location="New York City, NY"
+                 data-date="Every Saturday"
+                 data-time="9:00 PM - 2:00 AM"
+                 data-description="Authentic Cuban salsa experience in the heart of NYC. Live music, traditional dance, and vibrant atmosphere."
+                 data-price="$25 at door"
+                 data-features="Live Music • Cuban Style • Dance Shows • Full Bar">
+                <h3>Havana Nights</h3>
+                <p>📍 NYC • Cuban flavor</p>
+            </div>
+
+            <div class="dance-card magnetic" data-video="event"
+                 data-title="LA Salsa Festival"
+                 data-location="Los Angeles, CA"
+                 data-date="September 10-12"
+                 data-time="7:00 PM - 3:00 AM"
+                 data-description="West Coast's premier salsa event featuring LA style, performances, and social dancing under the stars."
+                 data-price="$120-$250"
+                 data-features="LA Style • Outdoor Dancing • Celebrity Instructors • Afterparties">
+                <h3>LA Salsa Festival</h3>
+                <p>📍 Los Angeles • West Coast vibe</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEARN -->
+    <section class="tab-content" id="learn">
+        <div class="dance-grid">
+            <div class="dance-card magnetic" data-video="learn"
+                 data-title="Beginner Salsa Basics"
+                 data-location="Chicago, IL"
+                 data-date="Tuesday & Thursday"
+                 data-time="7:00 PM - 8:30 PM"
+                 data-description="Start your salsa journey with fundamental steps, timing, and partner work. No experience needed!"
+                 data-price="$100 per month"
+                 data-features="Basic Steps • Partner Work • Timing • Social Skills">
+                <h3>Beginner Salsa Basics</h3>
+                <p>Perfect for absolute beginners</p>
+            </div>
+
+            <div class="dance-card magnetic" data-video="learn"
+                 data-title="Advanced Partner Techniques"
+                 data-location="San Francisco, CA"
+                 data-date="Weekend Intensive"
+                 data-time="2:00 PM - 6:00 PM"
+                 data-description="Master complex partner work, lifts, and styling. Take your dancing to the next level!"
+                 data-price="$200 weekend"
+                 data-features="Advanced Turns • Styling • Musicality • Performance Prep">
+                <h3>Advanced Partner Techniques</h3>
+                <p>Elevate your partner dancing</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- STUDIOS -->
+    <section class="tab-content" id="studios">
+        <div class="dance-grid">
+            <div class="dance-card magnetic" data-video="studio"
+                 data-title="Ritmo Latino Dance"
+                 data-location="Houston, TX"
+                 data-date="Daily Classes"
+                 data-time="5:00 PM - 11:00 PM"
+                 data-description="Houston's hottest salsa studio with authentic Latin atmosphere and world-class instructors."
+                 data-price="$15 drop-in, $120/month"
+                 data-features="Latin Music • Social Nights • Multiple Levels • Parking">
+                <h3>Ritmo Latino Dance</h3>
+                <p>📍 Houston • Latin heart</p>
+            </div>
+
+            <div class="dance-card magnetic" data-video="studio"
+                 data-title="Salsa Heat Studio"
+                 data-location="Phoenix, AZ"
+                 data-date="Mon/Wed/Fri"
+                 data-time="6:30 PM - 9:30 PM"
+                 data-description="High-energy salsa classes with focus on technique, style, and performance. Join the salsa family!"
+                 data-price="$18 drop-in, $140/month"
+                 data-features="Performance Team • Technique Focus • Social Events • Beginner Friendly">
+                <h3>Salsa Heat Studio</h3>
+                <p>📍 Phoenix • Desert fire</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detail Modal -->
+    <div class="detail-modal" id="detailModal">
+        <div class="modal-overlay" onclick="closeModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div class="modal-header">
+                <h2 class="modal-title"></h2>
+                <div class="modal-location"></div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-info">
+                    <div class="info-item">
+                        <span class="info-label">📅</span>
+                        <span class="modal-date"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">🕐</span>
+                        <span class="modal-time"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">💰</span>
+                        <span class="modal-price"></span>
+                    </div>
+                </div>
+                <p class="modal-description"></p>
+                <div class="modal-features"></div>
+                <button class="modal-cta">Get More Info</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Dance Hub</p>
+    </footer>
+
+    <script defer src="../scripts/music-tracks.js"></script>
+    <script defer src="../scripts/music-player.js"></script>
+    <script src="../scripts/salsa.js"></script>
+</body>
+
+</html>

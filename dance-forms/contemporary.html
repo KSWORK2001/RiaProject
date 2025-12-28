@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contemporary | Dancetopia</title>
+
+    <link rel="stylesheet" href="../styles/main.css" />
+</head>
+
+<body class="contemporary">
+
+    <!-- Background Video Layer -->
+    <div class="video-bg">
+        <video id="video-event" src="../assets/videos/contemporary-event.mp4" muted loop playsinline></video>
+        <video id="video-learn" src="../assets/videos/contemporary-learn.mp4" muted loop playsinline></video>
+        <video id="video-studio" src="../assets/videos/contemporary-studio.mp4" muted loop playsinline></video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <header class="navbar">
+        <a class="logo dance-logo" href="../index.html">
+            <span>D</span><span>A</span><span>N</span><span>C</span><span>E</span><span>T</span><span>O</span><span>P</span><span>I</span><span>A</span>
+        </a>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="#">Events</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main class="hero contemporary-hero">
+        <div class="hero-left">
+            <span class="badge">Contemporary · Global</span>
+            <h1 class="hero-title stacked">
+                <span>CONTEM</span>
+                <span>PORARY</span>
+            </h1>
+        </div>
+
+        <div class="hero-right">
+            <p>
+                From experimental studios to world stages —  
+                explore the boundless language of contemporary movement.
+            </p>
+        </div>
+    </main>
+
+
+    <!-- Tabs -->
+    <section class="tabs">
+        <button class="tab active" data-tab="events">Events</button>
+        <button class="tab" data-tab="learn">Learn</button>
+        <button class="tab" data-tab="studios">Classes & Studios</button>
+    </section>
+
+    <!-- EVENTS -->
+    <section class="tab-content active" id="events">
+        <div class="dance-grid">
+            <div class="dance-card magnetic" data-video="event" 
+                 data-title="NYC Dance Festival" 
+                 data-location="New York City, NY" 
+                 data-date="October 20-23" 
+                 data-time="7:30 PM - 10:00 PM"
+                 data-description="Premier contemporary dance showcase featuring innovative choreographers and groundbreaking performances from around the world."
+                 data-price="$45-$85"
+                 data-features="World Premieres • Experimental Works • International Artists • Post-show Talks">
+                <h3>NYC Dance Festival</h3>
+                <p>📍 NYC • Cutting edge</p>
+            </div>
+
+            <div class="dance-card magnetic" data-video="event"
+                 data-title="Fluid Motion Showcase"
+                 data-location="Los Angeles, CA"
+                 data-date="Monthly"
+                 data-time="8:00 PM - 10:30 PM"
+                 data-description="Intimate contemporary performances in an industrial loft setting. Raw, authentic, and emotionally powerful."
+                 data-price="$30 advance, $35 door"
+                 data-features="Intimate Venue • Live Music • Mixed Media • Artist Reception">
+                <h3>Fluid Motion Showcase</h3>
+                <p>📍 LA • Underground art</p>
+            </div>
+
+            <div class="dance-card magnetic" data-video="event"
+                 data-title="European Contemporary Tour"
+                 data-location="Multiple Cities"
+                 data-date="Spring Season"
+                 data-time="Various times"
+                 data-description="Touring contemporary dance company bringing innovative works to audiences across Europe and select US cities."
+                 data-price="$25-$75"
+                 data-features="Touring Company • Award-winning • Educational Workshops • Meet & Greet">
+                <h3>European Contemporary Tour</h3>
+                <p>📍 Global • International tour</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEARN -->
+    <section class="tab-content" id="learn">
+        <div class="dance-grid">
+            <div class="dance-card magnetic" data-video="learn"
+                 data-title="Contemporary Foundations"
+                 data-location="Seattle, WA"
+                 data-date="Monday/Wednesday"
+                 data-time="6:00 PM - 8:00 PM"
+                 data-description="Explore the fundamentals of contemporary dance through improvisation, technique, and creative expression."
+                 data-price="$140 per month"
+                 data-features="Floor Work • Improvisation • Technique • Creative Process">
+                <h3>Contemporary Foundations</h3>
+                <p>Discover your movement voice</p>
+            </div>
+
+            <div class="dance-card magnetic" data-video="learn"
+                 data-title="Advanced Composition"
+                 data-location="Portland, OR"
+                 data-date="Weekend Intensive"
+                 data-time="10:00 AM - 4:00 PM"
+                 data-description="Deep dive into choreographic methods, movement analysis, and creating original contemporary works."
+                 data-price="$250 weekend"
+                 data-features="Choreography • Movement Analysis • Solo Work • Group Creation">
+                <h3>Advanced Composition</h3>
+                <p>Create your own choreography</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- STUDIOS -->
+    <section class="tab-content" id="studios">
+        <div class="dance-grid">
+            <div class="dance-card magnetic" data-video="studio"
+                 data-title="Movement Lab"
+                 data-location="San Francisco, CA"
+                 data-date="Daily Classes"
+                 data-time="7:00 AM - 9:00 PM"
+                 data-description="Innovative contemporary dance studio fostering creativity and artistic growth in a supportive environment."
+                 data-price="$20 drop-in, $160/month"
+                 data-features="Professional Faculty • Performance Space • Artist Residencies • Community">
+                <h3>Movement Lab</h3>
+                <p>📍 San Francisco • Creative hub</p>
+            </div>
+
+            <div class="dance-card magnetic" data-video="studio"
+                 data-title="Flow Arts Studio"
+                 data-location="Austin, TX"
+                 data-date="Tue/Thu/Sat"
+                 data-time="5:30 PM - 8:30 PM"
+                 data-description="Contemporary dance studio specializing in improvisation, contact improv, and experimental movement practices."
+                 data-price="$18 drop-in, $130/month"
+                 data-features="Contact Improv • Experimental • Jam Sessions • Workshops">
+                <h3>Flow Arts Studio</h3>
+                <p>📍 Austin • Experimental movement</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detail Modal -->
+    <div class="detail-modal" id="detailModal">
+        <div class="modal-overlay" onclick="closeModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div class="modal-header">
+                <h2 class="modal-title"></h2>
+                <div class="modal-location"></div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-info">
+                    <div class="info-item">
+                        <span class="info-label">📅</span>
+                        <span class="modal-date"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">🕐</span>
+                        <span class="modal-time"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">💰</span>
+                        <span class="modal-price"></span>
+                    </div>
+                </div>
+                <p class="modal-description"></p>
+                <div class="modal-features"></div>
+                <button class="modal-cta">Get More Info</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Dance Hub</p>
+    </footer>
+
+    <script defer src="../scripts/music-tracks.js"></script>
+    <script defer src="../scripts/music-player.js"></script>
+    <script src="../scripts/contemporary.js"></script>
+</body>
+
+</html>
